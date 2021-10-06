@@ -1,0 +1,52 @@
+body {
+    background-color: #000;
+    color: #fff;
+  }
+  header {
+    width: 1000px;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  header > h1 {
+    font-size: 78px;
+  }
+  #username {
+    display: inline-block;
+    width: 150px;
+    border: 2px solid #fff;
+  
+  }
+  .wave {
+    font-size: 78px;
+    animation-name: wave-animation;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%;
+    display: inline-block;
+  }
+  
+  @keyframes wave-animation {
+    0% { transform: rotate(0.0deg) }
+    10% { transform : rotate(14.0deg)}
+    20% { transform : rotate(-8.0deg)}
+    30% { transform : rotate(14.0deg)}
+    40% { transform : rotate(-4.0deg)}
+    50% { transform : rotate(10.0deg)}
+    60% { transform : rotate(0.0deg)}
+    100% { transform : rotate(0.0deg)}
+  }
+  
+  .emojiback {
+    width: 320px;
+    height: 320px;
+    background-color: #fff;
+    border-radius: 50%;
+  }
+  .emojiback img {
+    width: 320px;
+    height: 320px;
+    filter: drop-shadow(10px 5px 6px #888);
+  }
+  
